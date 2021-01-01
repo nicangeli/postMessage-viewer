@@ -1,0 +1,15 @@
+{
+    "name": "PostMessage Viewer",
+    "version": "1.0",
+    "description": "Logs the communication sent from iframes via postMessages to the console. Useful for debugging post messages.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["inject.js"]
+      }
+    ],
+    "manifest_version": 2
+  }
